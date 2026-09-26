@@ -1,0 +1,15 @@
+{
+  "name": "Demo Source",
+  "version": "1.0",
+  "lang": "en",
+  "iconUrl": "",
+  "icon": "icon.png",
+  "apiVersion": 1,
+  "hostAllowlist": [
+    "raw.githubusercontent.com"
+  ],
+  "capabilities": [],
+  "nsfw": false,
+  "maxRequestsPerSecond": 4,
+  "cachePolicy": {}
+}
