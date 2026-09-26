@@ -151,12 +151,12 @@ def cover(entry, index):
             break
         size -= 4
     lines = wrap(title, title_font, W - 80, d)
-    # The title band sits at the top: the app's Library grid overlays its own title along the
-    # bottom of each cover, so a bottom band would collide with it.
+    # The title band sits in the upper third: the app draws unread badges in the top corners
+    # and its own title along the bottom of Library covers, so both edges stay clear.
     line_h = int(size * 1.03)
     block_h = line_h * len(lines) + 70
-    top = 72
-    d.rectangle([0, 0, W, top + block_h - 10], fill=band)
+    top = 190
+    d.rectangle([0, top - 26, W, top + block_h - 10], fill=band)
     for i, line in enumerate(lines):
         d.text((40, top + i * line_h), line, font=title_font, fill=ink)
     d.text((42, top + len(lines) * line_h + 12), entry["author"].upper(),
