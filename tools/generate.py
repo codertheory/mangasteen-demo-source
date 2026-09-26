@@ -151,15 +151,17 @@ def cover(entry, index):
             break
         size -= 4
     lines = wrap(title, title_font, W - 80, d)
+    # The title band sits at the top: the app's Library grid overlays its own title along the
+    # bottom of each cover, so a bottom band would collide with it.
     line_h = int(size * 1.03)
     block_h = line_h * len(lines) + 70
-    top = H - block_h - 40
-    d.rectangle([0, top - 20, W, H], fill=band)
+    top = 72
+    d.rectangle([0, 0, W, top + block_h - 10], fill=band)
     for i, line in enumerate(lines):
         d.text((40, top + i * line_h), line, font=title_font, fill=ink)
     d.text((42, top + len(lines) * line_h + 12), entry["author"].upper(),
            font=font(BODY_FONT, 26), fill=mix(by_luma[1], ink, 0.35))
-    d.text((W - 110, 36), "VOL. 1", font=font(BODY_FONT, 24), fill=ink)
+    d.text((W - 110, 26), "VOL. 1", font=font(BODY_FONT, 24), fill=ink)
 
     img.save(COVERS / f"{entry['slug']}.jpg", quality=86, optimize=True)
 

@@ -1,6 +1,6 @@
 /**
  * @name Demo Source
- * @version 1.0
+ * @version 1.1
  * @lang en
  *
  * Invented series with generated artwork, for store screenshots and demos. Nothing here is
