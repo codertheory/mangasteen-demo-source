@@ -5,6 +5,7 @@
   "description": "Demo source repository for Mangasteen",
   "license": "MIT",
   "scripts": {
+    "sign": "bash scripts/sign-sources.sh && npm run index",
     "index": "node scripts/build-index.mjs"
   }
 }
