@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "sources": [
+    {
+      "path": "sources/demo",
+      "name": "Demo Source",
+      "version": "1.2",
+      "hash": "sha256-f24cb2d140cde89daf1fd50960725d21df66331ee2f9de36217d1bedbbcfb49e",
+      "files": [
+        "extension.json",
+        "icon.png",
+        "main.js",
+        "main.js.sig"
+      ]
+    }
+  ]
+}
