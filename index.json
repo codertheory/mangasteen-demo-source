@@ -11,7 +11,13 @@
         "icon.png",
         "main.js",
         "main.js.sig"
-      ]
+      ],
+      "fileHashes": {
+        "extension.json": "86fa93359e1a1b6802727da2e773b1ab4018d9d92a601fdb5e475540e9d519a0",
+        "icon.png": "5bc367110751dc0daf770db8a9e9b3382477fcd1571a8e56633d82e4de7adfa4",
+        "main.js": "1146181e5020a5d39e8a8605ad68e13de858cfa599f775e768bb1e192d620c4a",
+        "main.js.sig": "b73e91f2fbfb3994ec1bbb9d943c42d46321b8d4b4cf30def9b3566a0b412a9f"
+      }
     }
   ]
 }
